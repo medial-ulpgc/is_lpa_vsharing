@@ -1,9 +1,13 @@
-
 package model;
+
+
 public class Vehicle {
     private Integer id;
-    private final String description;
+    private String description;
 
+    public Vehicle() {
+    }
+    
     public Vehicle(Integer id, String description) {
         this.id = id;
         this.description = description;
@@ -19,6 +23,16 @@ public class Vehicle {
 
     public void updateId (Vehicle vehicle){
         this.id = vehicle.getId();
-        
     }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    
+    
 }
